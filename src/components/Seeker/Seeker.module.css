@@ -1,0 +1,260 @@
+.selectorWrapper {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 58px;
+  }
+  .selector {
+    width: 252px;
+    height: 48px;
+    background: rgba(128, 131, 164, 0.06);
+    border: 2px solid rgba(128, 131, 164, 0.2);
+    box-sizing: border-box;
+    border-radius: 8px;
+  
+    font-family: Ubuntu-Regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #8083a4;
+  }
+  .header {
+    width: 463px;
+    height: 32px;
+    padding-left: 35px;
+    padding-top: 50px;
+    font-family: Ubuntu-Regular;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 32px;
+    color: #2c2d76;
+  }
+  .container {
+    width: 100%;
+    z-index: 10;
+    width: 660px;
+    height: 524px;
+    margin-left: 80px;
+    background: #ffffff;
+    box-shadow: 0px 4px 4px rgba(4, 5, 73, 0.25),
+      14px 14px 20px rgba(5, 6, 114, 0.2);
+    border-radius: 8px;
+    align-self: center;
+  }
+  
+  .cardsContainer {
+    margin-left: 10px;
+    display: inline-block;
+    z-index: 5;
+    width: 552px;
+    border-radius: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .card {
+    display: inline-block;
+    width: 544px;
+    height: 238px;
+    background: #373af5;
+    border: 2px solid #373af5;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(4, 5, 73, 0.25),
+      14px 14px 20px rgba(5, 6, 114, 0.2);
+    border-radius: 8px;
+    margin-top: 54px;
+    display: inline-block;
+  }
+  .temp {
+    display: flex;
+    justify-content: flex-end;
+  
+    margin-right: 20px;
+    margin-top: 20px;
+    font-family: Ubuntu-Regular;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 32px;
+    color: #ffffff;
+  }
+  .imageAndDate {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 0px;
+    padding-top: 30px;
+  }
+  
+  .date {
+    display: flex;
+    justify-content: center;
+    padding-top: 0px;
+    font-family: Ubuntu-Regular;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #8083a4;
+  }
+  .dateText {
+    margin-top: -20px;
+    margin-left: 20px;
+    font-family: Ubuntu-Regular;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #ffffff;
+  }
+  .fill {
+    padding-top: 64px;
+  }
+  
+  .calendar {
+    width: 252px;
+    height: 48px;
+    margin-left: 40px;
+    background: rgba(128, 131, 164, 0.06);
+    border: 2px solid rgba(128, 131, 164, 0.2);
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-family: Ubuntu-Regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #8083a4;
+  }
+  
+  .citiesList {
+    font-family: Ubuntu-Regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2c2d76;
+  }
+  
+  @media only screen and (max-width: 1468px) {
+    .calendar {
+      margin-right: 60px;
+    }
+    .container {
+      width: 80%;
+      z-index: 10;
+      height: 524px;
+      margin-left: 100px;
+      background: #ffffff;
+      box-shadow: 0px 4px 4px rgba(4, 5, 73, 0.25),
+        14px 14px 20px rgba(5, 6, 114, 0.2);
+      border-radius: 8px;
+      align-self: center;
+    }
+  
+    .cardsContainer {
+      margin-left: 10px;
+      display: inline-block;
+      z-index: 5;
+      width: 552px;
+      border-radius: 15px;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .container {
+      width: 300px;
+      z-index: 10;
+      margin-left: 100px;
+      background: #ffffff;
+      box-shadow: 0px 4px 4px rgba(4, 5, 73, 0.25),
+        14px 14px 20px rgba(5, 6, 114, 0.2);
+      border-radius: 8px;
+      align-self: center;
+    }
+  
+    .cardsContainer {
+      margin-left: 10px;
+      display: inline-block;
+      z-index: 5;
+      width: 252px;
+      border-radius: 15px;
+      width: 252px;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    .header {
+      width: 252px;
+      height: 64px;
+      padding-left: 0px;
+      margin-top: -20px;
+      font-family: Ubuntu-Regular;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 32px;
+      color: #2c2d76;
+    }
+    .calendar {
+      width: 252px;
+      height: 48px;
+      margin-left: 20px;
+      margin-top: 20px;
+      background: rgba(128, 131, 164, 0.06);
+      border: 2px solid rgba(128, 131, 164, 0.2);
+      box-sizing: border-box;
+      border-radius: 8px;
+      font-family: Ubuntu-Regular;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      color: #8083a4;
+    }
+    .selectorWrapper {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      margin-left: 0px;
+    }
+    .selector {
+      width: 252px;
+      height: 48px;
+      margin-left: 20px;
+      left: 34px;
+      top: 722px;
+      background: rgba(128, 131, 164, 0.06);
+      border: 2px solid rgba(128, 131, 164, 0.2);
+      box-sizing: border-box;
+      border-radius: 8px;
+    }
+    .fill {
+      padding-top: 30px;
+    }
+  
+    .date {
+      display: flex;
+      justify-content: center;
+      font-family: Ubuntu-Regular;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 24px;
+      white-space: pre-wrap;
+      color: #8083a4;
+    }
+    .card {
+      width: 252px;
+      height: 238px;
+      margin-top: 20px;
+      background: #373af5;
+      border: 2px solid #2c2d76;
+      box-sizing: border-box;
+      box-shadow: 0px 4px 4px rgba(4, 5, 73, 0.25),
+        14px 14px 20px rgba(5, 6, 114, 0.2);
+      border-radius: 8px;
+    }
+  }
+  

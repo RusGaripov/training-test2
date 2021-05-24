@@ -1,0 +1,296 @@
+.outerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 35px;
+    
+  
+  }
+  
+  .container {
+    width: 100%;
+    z-index: 10;
+    width: 660px;
+    height: 524px;
+    background: #ffffff;
+    box-shadow: 0px 4px 4px rgba(4, 5, 73, 0.25),
+      14px 14px 20px rgba(5, 6, 114, 0.2);
+    border-radius: 8px;
+    align-self: center;
+  }
+  
+  .header {
+    width: 240px;
+    height: 32px;
+    padding-left: 58px;
+    padding-top: 50px;
+    font-family: Ubuntu-Regular;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 32px;
+    color: #2c2d76;
+  }
+  
+  .cardsContainer {
+    margin-top: 40px;
+    margin-left: 10px;
+    display: inline-block;
+    z-index: 5;
+    width: 552px;
+    border-radius: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  .card {
+    display: inline-block;
+    width: 174px;
+    height: 238px;
+    margin-right: 10px;
+    background: #373af5;
+    border: 2px solid #373af5;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(4, 5, 73, 0.25),
+      14px 14px 20px rgba(5, 6, 114, 0.2);
+    border-radius: 8px;
+  }
+  
+  .selectorWrapper {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 70px;
+  }
+  .selector {
+    width: 252px;
+    height: 48px;
+    background: rgba(128, 131, 164, 0.06);
+    border: 2px solid rgba(128, 131, 164, 0.2);
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-family: Ubuntu-Regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #8083a4;
+  }
+  
+  .citiesList {
+    font-family: Ubuntu-Regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2c2d76;
+  }
+  
+  .prev,
+  .next {
+    cursor: pointer;
+    border: 1px solid black;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .listItem {
+    list-style-type: none; 
+    margin-top: 0px;
+  }
+  .listItem2 {
+    list-style-type: none; 
+    white-space: normal;
+  }
+  
+  .fillIn {
+    margin-top: 60px;
+  }
+  
+  .icon {
+    margin-top: 20px;
+  }
+  .date {
+    display: flex;
+    justify-content: center;
+    font-family: Ubuntu-Regular;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  
+  
+  
+    color: #8083a4;
+  }
+  .dateText {
+    margin-top: -20px;
+    margin-left: -60px;
+    font-family: Ubuntu-Regular;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #ffffff;
+  }
+  .temp {
+    display: flex;
+    width: 67px;
+    margin-left: 87px;
+    font-family: Ubuntu-Regular;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 32px;
+    color: #ffffff;
+  }
+  
+  .iconLeft {
+    margin-bottom: -220px;
+  } 
+  .iconRight {
+    margin-left: 600px;
+    margin-bottom: -220px;
+  }
+  .seeker {
+    display: flex;
+  }
+  
+  @media only screen and (max-width: 1468px) {
+    .outerContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .cardsContainer {
+      margin-top: 20px;
+      margin-left: 0px;
+      display: inline-block;
+      z-index: 5;
+      max-width: 552px;
+      border-radius: 15px;
+      background: #eee;
+      white-space: nowrap;
+      overflow: hidden;
+      background-color: skyBlue;
+    }
+  
+    .prev,
+    .next {
+      cursor: pointer;
+      border: 1px solid black;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      visibility: hidden;
+    }
+    .container {
+      margin-left: -50px;
+      width: 79%;
+      background: #ffffff;
+      box-shadow: 0px 4px 4px rgba(4, 5, 73, 0.25),
+        14px 14px 20px rgba(5, 6, 114, 0.2);
+      border-radius: 8px;
+    }
+  
+    .seeker {
+      display: flex;
+      margin-top: 34px;
+    }
+  
+    .card {
+      display: inline-block;
+      width: 174px;
+      height: 238px;
+      margin-right: 10px;
+      background: #373af5;
+      border: 2px solid #373af5;
+      box-sizing: border-box;
+      box-shadow: 0px 4px 4px rgba(4, 5, 73, 0.25),
+        14px 14px 20px rgba(5, 6, 114, 0.2);
+      border-radius: 8px;
+    }
+    .iconLeft {
+      margin-bottom: -200px;
+    }
+  
+    .iconRight {
+      margin-left: 580px;
+      margin-bottom: -200px;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .header{   
+      width: 240px;
+      height: 32px;
+      margin-left: -40px; 
+      font-family: Ubuntu-Regular;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 32px;
+      color: #2C2D76;
+    }  
+    .selectorWrapper {
+      display: flex;
+      justify-content: flex-start;
+      margin-left: 30px;
+    }
+    .selector {
+      width: 252px;
+      height: 48px;
+      background: rgba(128, 131, 164, 0.06);
+      border: 2px solid rgba(128, 131, 164, 0.2);
+      box-sizing: border-box;
+      border-radius: 8px; 
+      font-family: Ubuntu-Regular;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      color: #8083a4;
+    }
+    .container {
+      width: 100%;
+      z-index: 10;
+      width: 300px;
+      height: 524px;
+      background: #ffffff;
+      box-shadow: 0px 4px 4px rgba(4, 5, 73, 0.25),
+        14px 14px 20px rgba(5, 6, 114, 0.2);
+      border-radius: 8px;
+      align-self: center;
+    }
+  
+    .cardsContainer {
+      margin-top: 40px;
+      margin-left: 10px;
+      display: inline-block;
+      z-index: 5;
+      width: 252px;
+      border-radius: 15px;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    .header {
+      width: 252px;
+      height: 64px;
+      padding-top: 0px;
+      font-family: Ubuntu-Regular;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 32px;  
+      color: #2C2D76;
+    }
+    .date {
+    padding-left: 20px;
+    padding-right: 20px;
+    }
+  }

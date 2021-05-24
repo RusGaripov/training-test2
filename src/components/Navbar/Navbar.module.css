@@ -1,0 +1,167 @@
+.navbar {
+  background: url('../../images/bgTopRight.png') no-repeat;
+  background-position-x:  95px;
+  background-size: cover;
+
+ }
+ .container {
+ 
+   display: flex;
+   justify-content: space-around;
+   margin-top: -200px;
+   margin-bottom: 100px;
+   height: 30px;
+   width: 100%;
+ }
+ .navbarLink {
+   text-decoration: none;
+   font-size: 1.4rem;
+   text-align: center;
+   vertical-align: middle;
+   color: #ffffff;
+   line-height: 5rem;
+   font-weight: normal;
+ }
+ .selected {
+   font-weight: bold;
+ }
+ .menu {
+   width: 100px;
+   display: none;
+ }
+ 
+ .head {
+   padding-top: 0px;
+   margin-top: -9px;
+   height: 530px;
+   display: flex;
+   justify-content: space-between;
+ }
+ 
+ .weathForecast__weather {
+   position: absolute;
+   width: 418px;
+   height: 122px;
+   left: 332px;
+   top: 65px;
+   font-family: Ubuntu-Regular;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 102px;
+   line-height: 122px;
+   color: #ffffff;
+ }
+ .weathForecast__forecast {
+   position: absolute;
+   width: 406px;
+   height: 122px;
+   left: 701px;
+   top: 155px;
+ 
+   font-family: Ubuntu-Regular;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 102px;
+   line-height: 122px;
+   color: #ffffff;
+ }
+ 
+ @media only screen and (max-width: 1468px) {
+   .container {
+     display: flex;
+     justify-content: space-around;
+     flex-direction: column;
+     width: 100%;
+     margin-top: 0px;
+   }
+   .container {
+     display: flex;
+     justify-content: space-around;
+     margin-top: -400px;
+     margin-bottom: 50px;
+     height: 30px;
+     width: 100%;
+   }
+   .navbarLink {
+     text-decoration: none;
+     font-size: 1rem;
+     text-align: left;
+     color: #ffffff;
+     line-height: 1rem;
+     font-weight: normal;
+     margin-left: 70px;
+     margin-top:20px
+   }
+   .selected {
+     font-weight: bold;
+   }
+ 
+   .weathForecast__weather {
+     width: 418px;
+     height: 122px;
+     left: 153px;
+     top: 25px;
+ 
+     font-family: Ubuntu-Regular;
+     font-style: normal;
+     font-weight: bold;
+     font-size: 102px;
+     line-height: 122px;
+     color: #ffffff;
+   }
+ 
+   .weathForecast__forecast {
+     width: 406px;
+     height: 122px;
+     left: 462px;
+     top: 95px;
+     font-family: Ubuntu-Regular;
+     font-style: normal;
+     font-weight: bold;
+     font-size: 102px;
+     line-height: 122px;
+     color: #ffffff;
+   }
+ }
+ 
+ @media only screen and (max-width: 768px) {
+   .weathForecast__weather {
+     position: absolute;
+     width: 131px;
+     height: 32px;
+     left: 39px;
+     top: 32px;
+     font-family: Ubuntu-Regular;
+     font-style: normal;
+     font-weight: bold;
+     font-size: 32px;
+     line-height: 32px;
+     color: #ffffff;
+   }
+ 
+   .weathForecast__forecast {
+     position: absolute;
+     width: 128px;
+     height: 32px;
+     left: 154px;
+     top: 64px;
+     font-family: Ubuntu-Regular;
+     font-style: normal;
+     font-weight: bold;
+     font-size: 32px;
+     line-height: 32px;
+     color: #ffffff;
+   }
+   .selected {
+     font-weight: bold;
+   }
+   .container {
+     display: flex;
+     justify-content: space-around;
+     margin-top: -400px;
+     margin-bottom: 50px;
+     height: 30px;
+     width: 100%;
+   }
+ }
+ 
