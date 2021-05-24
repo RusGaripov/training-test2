@@ -18,10 +18,17 @@ export const Week = () => {
 
   const logMousePosition = (e) => {
     setX(e.clientX);
-
     let width = 174;
     let list = document.querySelector(`.carousel`);
-    if (window.innerWidth < 768 && list !== null) {
+
+    if (
+      window.innerWidth < 768 &&
+      list !== null &&
+      e.clientX > 110 &&
+      e.clientY > 450 &&
+      e.clientX < 370 &&
+      e.clientY < 700
+    ) {
       if (e.clientX > x && count < 7) {
         setCount(count + 1);
         list.style.marginLeft = -width * count + "px";
@@ -60,7 +67,7 @@ export const Week = () => {
       if (city === key) {
         axios
           .get(
-            `https://api.openweathermap.org/data/2.5/onecall?lat=${obj[key].lat}&lon=${obj[key].long}&units=metric&exclude=hourly&appid=1ff5a880beaa22f497a0f476494404fb`
+            `https://api.openweathermap.org/data/2.5/onecall?lat=${obj[key].lat}&lon=${obj[key].long}&units=metric&exclude=hourly&appid={API_KEY}`
           )
           .then((res) => {
             setWeather(res.data);
@@ -106,6 +113,7 @@ export const Week = () => {
               <img
                 className={styles.icon}
                 src={`http://openweathermap.org/img/wn/${weather.daily[index].weather[0].icon}@2x.png `}
+                alt="icon1"
               />
             </div>
             <div className={styles.temp}>
@@ -132,13 +140,19 @@ export const Week = () => {
       <div className={styles.container}>
         <h3 className={styles.header}>7 Days Forecast </h3>
         {city !== "Select city" && ready && (
-          <img src={iconLeft} className={styles.iconLeft} onClick={prevClick} />
+          <img
+            src={iconLeft}
+            className={styles.iconLeft}
+            onClick={prevClick}
+            alt="iconLeft"
+          />
         )}
         {city !== "Select city" && ready && (
           <img
             src={iconRight}
             className={styles.iconRight}
             onClick={nextClick}
+            alt="iconRight"
           />
         )}
         <div className={styles.selectorWrapper}>
@@ -166,7 +180,7 @@ export const Week = () => {
         )}
         {city === "Select city" && (
           <div className={styles.selectCity}>
-            <img src={FillIn} className={styles.fillIn} />
+            <img src={FillIn} className={styles.fillIn} alt="fillIn" />
             <div className={styles.date}>
               Fill in all the fields and the weather will be displayed
             </div>

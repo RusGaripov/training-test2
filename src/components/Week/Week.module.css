@@ -191,7 +191,7 @@
       visibility: hidden;
     }
     .container {
-      margin-left: -50px;
+      margin-left: 0px;
       width: 79%;
       background: #ffffff;
       box-shadow: 0px 4px 4px rgba(4, 5, 73, 0.25),
@@ -201,6 +201,7 @@
   
     .seeker {
       display: flex;
+      justify-content: center;
       margin-top: 34px;
     }
   
@@ -225,7 +226,7 @@
       margin-bottom: -200px;
     }
   }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 830px) {
     .header{   
       width: 240px;
       height: 32px;
@@ -292,5 +293,10 @@
     .date {
     padding-left: 20px;
     padding-right: 20px;
+    }
+    .seeker {
+      display: flex;
+      justify-content: center;
+      margin-top: 34px;
     }
   }

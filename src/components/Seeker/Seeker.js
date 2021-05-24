@@ -11,7 +11,6 @@ export const Seeker = () => {
 
   useEffect(() => {
     let time = new Date(seekingDate).getTime() / 1000;
-    let timeUTC = new Date(seekingDate).toUTCString().slice(5, 16);
     let obj = {
       Samara: { lat: 53.2, long: 50.15 },
       Tolyatti: { lat: 53.53, long: 49.34 },
@@ -23,7 +22,7 @@ export const Seeker = () => {
       if (city === key && seekingDate !== "Select Date") {
         axios
           .get(
-            `http://api.openweathermap.org/data/2.5/onecall/timemachine?lat=${obj[key].lat}&lon=${obj[key].long}&units=metric&dt=${time}&appid=1ff5a880beaa22f497a0f476494404fb`
+            `http://api.openweathermap.org/data/2.5/onecall/timemachine?lat=${obj[key].lat}&lon=${obj[key].long}&units=metric&dt=${time}&appid={API_KEY}`
           )
           .then((res) => {
             setWeather(res.data);
@@ -70,7 +69,7 @@ export const Seeker = () => {
       {(city === "Select City" || seekingDate === "Select Date") && (
         <div className={styles.cardsContainer}>
           <div className={styles.fill}>
-            <img src={FillIn} className={styles.fillIn} />
+            <img src={FillIn} className={styles.fillIn} alt="fillIn2" />
             <div className={styles.date}>
               Fill in all the fields and the weather will be displayed
             </div>
@@ -88,6 +87,7 @@ export const Seeker = () => {
             <div className={styles.date}>
               <img
                 src={`http://openweathermap.org/img/wn/${weather.current.weather[0].icon}@2x.png `}
+                alt="date"
               />
             </div>
             <div className={styles.temp}>
